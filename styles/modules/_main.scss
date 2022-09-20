@@ -1,0 +1,129 @@
+.main {
+  width: 100%;
+  &-hero {
+    display: flex;
+    gap: 5rem;
+    position: relative;
+    .calc {
+      transform: translateY(-7rem);
+      margin: 4rem;
+    }
+    .slider {
+      margin-top: 8rem;
+      background: #e31e25;
+      width: 90%;
+      height: 400px;
+      border-radius: 0.5rem;
+      padding: 4rem;
+      position: relative;
+
+      .boat {
+        position: absolute;
+        right: 3rem;
+        bottom: 0;
+      }
+      .person {
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        h1 {
+          font-size: 1.6rem;
+          text-align: left;
+          font-weight: normal;
+          color: #fff;
+        }
+        .slider-btn {
+          text-transform: uppercase;
+          background: none;
+          border: 1px solid #fff;
+          color: #fff;
+          padding: 1rem 1.8rem;
+          border-radius: 999px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 300ms ease;
+          &:hover {
+            color: #e31e25;
+            background: #fff;
+          }
+        }
+        .price {
+          color: #fff;
+          .old-price {
+            text-decoration: line-through;
+          }
+        }
+        .slider-arrows {
+          display: flex;
+          gap: 2rem;
+        }
+      }
+    }
+
+    .slider {
+      margin-top: 8rem;
+      background: #e31e25;
+      width: 90%;
+      height: 400px;
+      border-radius: 0.5rem;
+      padding: 4rem;
+      position: relative;
+      .boat {
+        position: absolute;
+        right: 3rem;
+        bottom: 0;
+      }
+      .person {
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        .price {
+          color: #fff;
+          .old-price {
+            text-decoration: line-through;
+          }
+        }
+        .slider-arrows {
+          display: flex;
+          gap: 2rem;
+        }
+      }
+    }
+  }
+  &-features__list {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    .feature {
+      display: flex;
+      flex-direction: column;
+      width: 380px;
+      height: 220px;
+      border-radius: 0.5rem;
+      position: relative;
+      padding: 1rem;
+      .title {
+        text-align: left;
+      }
+      &-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
